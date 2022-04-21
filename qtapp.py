@@ -15,11 +15,18 @@ class ServerSelecter(QMainWindow, Ui_ServerSelecter):
 
     def connect_to_server(self):
         if self.radioButton.isChecked():  # = default server button
-            pass
+            s = nlib.get_json_from_url("https://raw.githubusercontent.com/SiniKraft/PyChatLink/master/server-info.json")
+            if s["online"]:
+                ip = s["ip"]
+            else:
+                showerror(s["msg"], self, "Le serveur est hors-ligne !")
+        else:
+            ip = str(self.lineEdit_2.text())
+        print(ip)
 
 
-def showerror(_msg, _win=None, title="SiniKraft STORE - An error occurred"):
-    msg = QMessageBox(win)
+def showerror(_msg, _win=None, title="PyChatLink - Une erreur est survenue."):
+    msg = QMessageBox(_win)
     msg.setWindowIcon(QIcon(QPixmap(":/images/SiniKraft-STORE-icon.png")))
     msg.setWindowTitle(title)
     msg.setIcon(QMessageBox.Critical)
