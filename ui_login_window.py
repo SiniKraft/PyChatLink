@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'login_windowyNEVYi.ui'
+## Form generated from reading UI file 'login_windowRQkRjz.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.5
 ##
@@ -116,6 +116,9 @@ class Ui_MainWindow(object):
         self.menubar.setObjectName(u"menubar")
         self.menubar.setGeometry(QRect(0, 0, 279, 21))
         MainWindow.setMenuBar(self.menubar)
+        QWidget.setTabOrder(self.lineEdit_2, self.lineEdit)
+        QWidget.setTabOrder(self.lineEdit, self.checkBox)
+        QWidget.setTabOrder(self.checkBox, self.pushButton)
 
         self.retranslateUi(MainWindow)
 
