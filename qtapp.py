@@ -16,12 +16,17 @@ class ServerSelecter(QMainWindow, Ui_ServerSelecter):
     def connect_to_server(self):
         ip = ""
         if self.radioButton.isChecked():  # = default server button
-            s = nlib.get_json_from_url("https://raw.githubusercontent.com/SiniKraft/PyChatLink/master/server-info.json")
-            if s["online"]:
-                print(s)
-                ip = s["ip"]
-            else:
-                showerror(s["msg"], self, "Le serveur est hors-ligne !")
+            s = {}
+            try:
+                s = nlib.get_json_from_url("https://raw.githubusercontent.com/SiniKraft/PyChatLink/master/"
+                                           "server-info.json")
+            except Exception as e:
+                showerror("Erreur : " + str(e), self)
+            if s != {}:
+                if s["online"]:
+                    ip = s["ip"]
+                else:
+                    showerror(s["msg"], self, "Le serveur est hors-ligne !")
         else:
             ip = str(self.lineEdit_2.text())
         if ip != "":
