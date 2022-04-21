@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'server_selecterGbEUvC.ui'
+## Form generated from reading UI file 'server_selecterPSTjYa.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.5
 ##
@@ -64,7 +64,7 @@ class Ui_MainWindow(object):
         self.lineEdit_2.setEnabled(False)
         self.lineEdit_2.setMinimumSize(QSize(230, 0))
         self.lineEdit_2.setMaximumSize(QSize(16777215, 16777215))
-        self.lineEdit_2.setMaxLength(32)
+        self.lineEdit_2.setMaxLength(2046)
         self.lineEdit_2.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
         self.lineEdit_2.setClearButtonEnabled(False)
 
