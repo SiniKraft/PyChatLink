@@ -1,4 +1,5 @@
 import sys
+import nathlib as nlib
 
 from PySide2.QtGui import QIcon, QPixmap, Qt
 from PySide2.QtWidgets import QMainWindow, QMessageBox, QApplication
