@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'chatNcDjtY.ui'
+## Form generated from reading UI file 'chatMtDhQd.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.5
 ##
@@ -57,20 +57,6 @@ class Ui_MainWindow(object):
             self.tableWidget.setColumnCount(1)
         __qtablewidgetitem = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
-        if (self.tableWidget.rowCount() < 3):
-            self.tableWidget.setRowCount(3)
-        __qtablewidgetitem1 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(0, __qtablewidgetitem1)
-        __qtablewidgetitem2 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(1, __qtablewidgetitem2)
-        __qtablewidgetitem3 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(2, __qtablewidgetitem3)
-        __qtablewidgetitem4 = QTableWidgetItem()
-        self.tableWidget.setItem(0, 0, __qtablewidgetitem4)
-        __qtablewidgetitem5 = QTableWidgetItem()
-        self.tableWidget.setItem(1, 0, __qtablewidgetitem5)
-        __qtablewidgetitem6 = QTableWidgetItem()
-        self.tableWidget.setItem(2, 0, __qtablewidgetitem6)
         self.tableWidget.setObjectName(u"tableWidget")
         self.tableWidget.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.tableWidget.setAlternatingRowColors(False)
@@ -98,6 +84,7 @@ class Ui_MainWindow(object):
         QWidget.setTabOrder(self.lineEdit, self.commandLinkButton)
 
         self.retranslateUi(MainWindow)
+        self.lineEdit.returnPressed.connect(self.commandLinkButton.click)
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
@@ -108,22 +95,5 @@ class Ui_MainWindow(object):
         self.commandLinkButton.setText(QCoreApplication.translate("MainWindow", u"Envoyer", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Messages", None));
-        ___qtablewidgetitem1 = self.tableWidget.verticalHeaderItem(0)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Sini", None));
-        ___qtablewidgetitem2 = self.tableWidget.verticalHeaderItem(1)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Sini", None));
-        ___qtablewidgetitem3 = self.tableWidget.verticalHeaderItem(2)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"zblorkfan", None));
-
-        __sortingEnabled = self.tableWidget.isSortingEnabled()
-        self.tableWidget.setSortingEnabled(False)
-        ___qtablewidgetitem4 = self.tableWidget.item(0, 0)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"tttt", None));
-        ___qtablewidgetitem5 = self.tableWidget.item(1, 0)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"tttttt", None));
-        ___qtablewidgetitem6 = self.tableWidget.item(2, 0)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"eeee", None));
-        self.tableWidget.setSortingEnabled(__sortingEnabled)
-
     # retranslateUi
 

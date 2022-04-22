@@ -90,41 +90,11 @@
         <attribute name="verticalHeaderHighlightSections">
          <bool>true</bool>
         </attribute>
-        <row>
-         <property name="text">
-          <string>Sini</string>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string>Sini</string>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string>zblorkfan</string>
-         </property>
-        </row>
         <column>
          <property name="text">
           <string>Messages</string>
          </property>
         </column>
-        <item row="0" column="0">
-         <property name="text">
-          <string>tttt</string>
-         </property>
-        </item>
-        <item row="1" column="0">
-         <property name="text">
-          <string>tttttt</string>
-         </property>
-        </item>
-        <item row="2" column="0">
-         <property name="text">
-          <string>eeee</string>
-         </property>
-        </item>
        </widget>
       </item>
      </layout>
@@ -148,5 +118,22 @@
   <tabstop>commandLinkButton</tabstop>
  </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>commandLinkButton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>266</x>
+     <y>447</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>448</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
